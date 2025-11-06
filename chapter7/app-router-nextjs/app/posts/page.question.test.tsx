@@ -9,19 +9,10 @@ setupMockServer(...postHandlers);
 
 describe('Posts', () => {
   it('posts 데이터를 조회해서 화면에 표시해야 한다', async () => {
-    render(<Posts />);
-  
-    expect(await screen.findByText('title 1 by 1')).toBeInTheDocument();
-    expect(await screen.findByText('title 2 by 1')).toBeInTheDocument();
-    expect(await screen.findByText('title 3 by 1')).toBeInTheDocument();
+
   }); 
 
   it('검색 창은 htmlFor 연결이 되어야하고, placeholder 속성을 가지고 있어야 한다', () => {
-    render(<Posts />);
-    const titleInput = screen.getByLabelText('title');
 
-    expect(titleInput).toBeInTheDocument();
-    expect(titleInput).toHaveAccessibleName('title');
-    expect(titleInput).toHaveProperty('placeholder', 'title');
   });
 });
