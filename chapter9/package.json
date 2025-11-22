@@ -11,6 +11,7 @@
     "vrt:snapshot": "storycap --serverCmd \"npx http-server storybook-static -a localhost -p 6006\" http://localhost:6006",
     "vrt:expected": "rimraf .reg/expected && mv __screenshots__ .reg/expected",
     "vrt:run": "reg-suit run",
+    "vrt:run:local": "reg-suit run --config regconfig.local.json",
     "vrt:serve": "npx http-server .reg -o -p 8080"
   },
   "keywords": [],
