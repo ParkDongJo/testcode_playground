@@ -38,4 +38,4 @@ jobs:
       - name: Run Storycap
         run: npm run vrt:snapshot
       - name: Run reg-suit
-        run: npm run vrt:run
+        run: echo "REG_NOTIFY_CLIENT_ID: $REG_NOTIFY_CLIENT_ID" && npm run vrt:run
