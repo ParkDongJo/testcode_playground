@@ -2,9 +2,13 @@ name: Run VRT
 
 on:
   push:
+    branches:
+      - "test/**"
     paths:
       - "chapter9/**"
   pull_request:
+    branches:
+      - "test/**"
     paths:
       - "chapter9/**"
 
